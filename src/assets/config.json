@@ -1,0 +1,150 @@
+{
+    "name":"You name goes here",
+    "weatherApikey": "https://openweathermap.org/price",
+    "backgrounds": [
+        {
+            "id": "4muj7Br-O4U",
+            "opacity": "0.1",
+            "particles": false,
+            "start": 6,
+            "end": 19
+          },
+          {
+            "id": "rWey_wseEcY",
+            "opacity": "0.5",
+            "particles": true,
+            "start": 16,
+            "end": 6
+          },
+          {
+            "id": "dzejyfCAzIA",
+            "opacity": "0.5",
+            "particles": true,
+            "start": 0,
+            "end": 24
+          }
+    ],
+    "calendar":
+    [
+        {
+            "endpoint":"path-to.ics",
+            "cors":true
+        }
+    ],
+    "sites":[
+        {
+            "title": "Netflix",
+            "img": "netflix.svg",
+            "url": "https://www.netflix.com/browse"
+          },
+          {
+            "title": "Youtube",
+            "img": "youtube.svg",
+            "url": "https://www.youtube.com/"
+          },
+          {
+            "title": "One",
+            "img": "one.svg",
+            "url": "https://mail.one.com/julius@juto.dk/INBOX/1/"
+          },
+          {
+            "title": "Soundcloud",
+            "img": "soundcloud.svg",
+            "url": "https://soundcloud.com/discover"
+          },
+          {
+            "title": "Messenger",
+            "img": "messenger.svg",
+            "url": "https://www.facebook.com/messages/t"
+          },
+          {
+            "title": "Facebook",
+            "img": "facebook.svg",
+            "url": "https://www.facebook.com/"
+          },
+          {
+            "title": "Reddit",
+            "img": "reddit.svg",
+            "url": "https://reddit.com/"
+          },
+          {
+            "title": "Linkedin",
+            "img": "linkedin.svg",
+            "url": "https://www.linkedin.com/feed/"
+          }
+    ],
+    "searchOperators": [
+        {
+            "code": "g:",
+            "searchURL": "https://www.google.com/search?q=",
+            "name": "Google",
+            "search": true
+          },
+          {
+            "code": "y:",
+            "searchURL": "https://www.youtube.com/results?search_query=",
+            "name": "Youtube",
+            "search": true
+          },
+          {
+            "code": "f:",
+            "searchURL": "https://www.facebook.com/search/top/?q=",
+            "name": "Facebook",
+            "search": true
+          },
+          {
+            "code": "r:",
+            "searchURL": "https://www.reddit.com/search/?q=",
+            "name": "Reddit",
+            "search": true
+          },
+          {
+            "code": "n:",
+            "searchURL": "https://www.netflix.com/search?q=",
+            "name": "Netflix",
+            "search": true
+          },
+          {
+            "code": "s:",
+            "searchURL": "https://soundcloud.com/search?q=",
+            "name": "Soundcloud",
+            "search": true
+          },
+          {
+            "code": "d:",
+            "searchURL": "https://duckduckgo.com/?q=",
+            "name": "DuckDuckGo",
+            "search": true
+          },
+          {
+            "code": "l:",
+            "searchURL": "https://www.linkedin.com/search/results/all/?",
+            "name": "Linkedin",
+            "search": true
+          },
+          {
+            "code": "dr",
+            "searchURL": "https://drive.google.com/drive/u/0/search?q=",
+            "name": "Drive",
+            "search": false
+          },
+          {
+            "code": "ca",
+            "searchURL": "https://calendar.google.com/calendar/",
+            "name": "Calender",
+            "search": false
+          },
+          {
+            "code": "tr",
+            "searchURL": "https://translate.google.dk/",
+            "name": "Translate",
+            "search": false
+          }
+    ],
+    "greetings":{
+        "morningGreetings":["Good morning {0}", "Welcome {0}"],
+        "dayGreetings": ["Let's do some work", "welcome to school {0}"],
+        "eveningGreetings": ["Good evening {0}", "Remember to sleep {0}"],
+        "nightGreetings":["Sleep well {0}"]
+    }
+}

@@ -1,0 +1,331 @@
+:root
+{
+    --main-bg:#151D26
+}
+
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Light.ttf);
+  }
+
+
+body
+{
+    background-color: var(--main-bg);
+    color:rgb(204, 204, 204);
+    margin-top:4%;
+    font-family: roboto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#background
+{
+	position: absolute;
+	width: 100vw!important;
+	height: 100vh!important;
+    opacity : 0.1;
+	z-index: -1;
+	top: 0;
+    left: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.modal-backdrop
+{
+	z-index: -1;
+}
+
+.modal-content
+{
+	background-color: var(--main-bg);
+	color: whitesmoke;
+}
+
+section
+{
+    height:90vh;
+}
+
+.active-warning
+{
+	color: #fff;
+	background-color: var(--warning);
+	border-color: var(--warning);
+}
+
+/* weather */
+
+.weather-icon
+{
+	filter: invert(64%) sepia(100%) saturate(420%) hue-rotate(355deg) brightness(103%) contrast(107%);
+}
+/* weather */
+
+
+/* particles */
+
+.particles-js-canvas-el {
+	position: absolute;
+	width:80%;
+	height:80%!important;
+	top: 10%;
+	z-index: -1;
+}
+
+/* end particles */
+
+/* time, date and greetings */
+
+#greeting
+{
+    color: #fff;
+}
+
+#time
+{
+	margin-top: 10px;
+	font-weight: bold;
+    font-size: 500%;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+#date
+{
+    font-size: 200%;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* time and date end */
+
+/* Calendar */
+.scrollable	
+{
+	overflow-y:auto;
+	overflow-x:hidden;
+	
+}
+
+.text-dir-rtl
+{
+	direction: rtl;
+}
+
+.text-dir-ltr
+{
+	direction: ltr;
+}
+
+::-webkit-scrollbar {
+	width: 3px;
+  }
+
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #FFC107; 
+	border-radius: 16px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #C49405; 
+	border-radius: 15px;
+  }
+
+
+
+/* Calendar */
+
+/* Quick nav */
+
+.quick-navigation-item
+{
+    text-align: center;
+    transition: all 250ms;
+}
+
+.quick-navigation-item p
+{
+    padding-top: 5px;
+}
+
+a
+{
+
+    color:rgb(204, 204, 204);
+}
+
+a:hover
+{
+    text-decoration: none;
+    color:var(--warning);
+}
+
+.quick-navigation-item:hover
+{
+    transform: translate(0,-15px) scale(1.3,1.3);
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.col-md-3
+{
+    padding-bottom: 25px;
+}
+
+.col-md-3:nth-last-of-type(1), .col-md-3:nth-last-of-type(2),.col-md-3:nth-last-of-type(3),.col-md-3:nth-last-of-type(4) {
+    padding-bottom:0;
+  }
+
+
+
+.img-fluid-small {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+/*Input*/
+.floating-label-form-group {
+	position: relative;
+	border-bottom: 1px solid var(--warning)
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+	font-size: 1.5em;
+	position: relative;
+	z-index: 1;
+	padding-right: 0;
+	padding-left: 0;
+	resize: none;
+	border: none;
+	border-radius: 0;
+	background: 0 0;
+	-webkit-box-shadow: none!important;
+	box-shadow: none!important
+}
+
+.floating-label-form-group label {
+	font-size: .85em;
+	line-height: 1.764705882em;
+	position: relative;
+	z-index: 0;
+	top: 2em;
+	display: block;
+	margin: 0;
+	-webkit-transition: top .3s ease, opacity .3s ease;
+	transition: top .3s ease, opacity .3s ease;
+	vertical-align: middle;
+	vertical-align: baseline;
+	opacity: 0
+}
+
+
+.floating-label-form-group-with-value label {
+	top: 0;
+	opacity: 1;
+	color: #ecf0f1
+}
+
+.floating-label-form-group-with-focus label {
+	color: #ffc107!important
+}
+
+form .row:first-child .floating-label-form-group {
+	border-top: 1px solid #0080ff
+}
+
+.form-control
+{
+	color: #ecf0f1;
+	background-color: rgba(255, 255, 255, 0);
+	outline: 0;
+}
+
+
+.form-control:focus {
+	color: #ecf0f1;
+	background-color: rgba(255, 255, 255, 0);
+	outline: 0;
+	-webkit-box-shadow: 0 0 0 .2rem rgba(26, 188, 156, .25);
+	box-shadow: 0 0 0 .2rem rgba(26, 188, 156, .25)
+}
+
+.form-control::-webkit-input-placeholder, .form-control::-moz-placeholder, .form-control:-ms-input-placeholder,
+.form-control::-ms-input-placeholder   
+{
+	color: #41516e;
+	opacity: 1
+}
+
+
+/* animate */
+.page{
+	position: fixed;
+	width:inherit;
+}
+
+.pageAnimation-enter-active
+{
+	animation: fadeInLeftBig 500ms;
+	animation-timing-function: ease-in-out;
+}
+
+.pageAnimation-leave-active
+{
+	animation: fadeOutLeftBig 500ms;
+	animation-timing-function: ease-in-out;
+}
+
+.fade-enter,
+.fade-leave-to
+{
+    opacity: 0
+}
+
+@keyframes fadeInLeftBig {
+	from {
+	  opacity: 0;
+	  -webkit-transform: translate3d(-1000px, 0, 0);
+	  transform: translate3d(-1000px, 0, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+
+@keyframes fadeOutLeftBig {
+	from {
+	  opacity: 1;
+	}
+  
+	to {
+	  opacity: 0;
+	  -webkit-transform: translate3d(-1000px, 0, 0);
+	  transform: translate3d(-1000px, 0, 0);
+	}
+  }
+/* end animate */
+
+/* Password */
+
+.card
+{
+	background-color: #1b2531;
+}
+
+/* End password*/

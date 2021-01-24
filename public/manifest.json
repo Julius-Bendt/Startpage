@@ -1,0 +1,15 @@
+{
+    "name": "Startpage | Julius Bendt",
+    "description": "A simple startpage!",
+    "author": "Julius Bendt",
+    "manifest_version":2,
+    "version": "0.0.0.1",
+    "permissions" : ["management","geolocation"],
+    "chrome_url_overrides" : {
+        "newtab": "index.html"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    }
+ }
