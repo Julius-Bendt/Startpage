@@ -35,7 +35,11 @@ export default {
     this.calendarEndpoints = config.calendar;
   },
   mounted() {
-    this.FetchCalendar("ucn");
+    this.calendarEndpoints.forEach(endpoint => {
+      if (endpoint.endpoint != "path-to.ics") {
+        this.FetchCalendar(endpoint);
+      }
+    });
   },
   methods: {
     Sort() {
@@ -76,12 +80,15 @@ export default {
 
               if (dtStart >= dateNow && dtStart <= lastDate)
                 this.calendar.push(event_data);
-              console.log(event_data);
             });
-            console.log(this.calendar);
             this.Sort();
           } else {
-            console.log("Error. " + request.status + calendarEndpoint);
+            console.log(
+              "Error Couldnt fetch  " +
+                calendarEndpoint +
+                ". Response code: " +
+                request.status
+            );
           }
         };
 

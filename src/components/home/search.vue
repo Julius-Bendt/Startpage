@@ -38,22 +38,16 @@ export default {
   },
   methods: {
     Submit() {
-      console.log("test");
       const searchQuery = this.sites[this.siteIndex].search
         ? this.searchText
         : "";
-      console.log(
-        "Search query: " + this.sites[this.siteIndex].searchURL + searchQuery
-      );
+
       window.location.href = this.sites[this.siteIndex].searchURL + searchQuery;
     },
     Change() {
-      console.log("changed!" + this.searchText);
-
       if (this.searchText.length == 2) {
         for (let i = 0; i < this.sites.length; i++) {
           const site = this.sites[i];
-          console.log(site);
 
           if (site.code.startsWith(this.searchText)) {
             this.siteIndex = i;

@@ -12,12 +12,14 @@ export default {
   name: "greetings",
   data: function() {
     return {
-      name: "Julius",
+      name: "",
       greeting: ""
     };
   },
   created() {
     let currentHour = new Date().getHours();
+
+    this.name = config.name;
     if (currentHour >= 6 && currentHour < 12) {
       this.greeting =
         config.greetings.morningGreetings[
@@ -29,8 +31,10 @@ export default {
           this.randomInt(0, config.greetings.dayGreetings.length)
         ];
     } else if (currentHour >= 17 && currentHour < 23) {
-      this.greeting = config.greetings.eveningGreetings;
-      [this.randomInt(0, config.greetings.eveningGreetings.length)];
+      this.greeting =
+        config.greetings.eveningGreetings[
+          this.randomInt(0, config.greetings.eveningGreetings.length)
+        ];
     } else if (currentHour >= 23 || (currentHour >= 0 && currentHour < 6)) {
       this.greeting =
         config.greetings.nightGreetings[

@@ -1,5 +1,5 @@
 {
-    "name":"You name goes here",
+    "name":"Your name here",
     "weatherApikey": "https://openweathermap.org/price",
     "backgrounds": [
         {
@@ -41,11 +41,6 @@
             "title": "Youtube",
             "img": "youtube.svg",
             "url": "https://www.youtube.com/"
-          },
-          {
-            "title": "One",
-            "img": "one.svg",
-            "url": "https://mail.one.com/julius@juto.dk/INBOX/1/"
           },
           {
             "title": "Soundcloud",
@@ -136,7 +131,7 @@
           },
           {
             "code": "tr",
-            "searchURL": "https://translate.google.dk/",
+            "searchURL": "https://translate.google.com/",
             "name": "Translate",
             "search": false
           }

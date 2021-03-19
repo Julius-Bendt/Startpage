@@ -60,5 +60,14 @@ npm run build
 npm run lint
 ```
 
+## Todo
+- [x] Implement search
+- [x] Implement weather
+- [x] Implement calendar
+- [x] Implement greetings
+- [x] Implement clock
+- [] Implement settings
+
+
 
 Made with :heart: in Aalborg, Denmark using Vue and Bootstrap.

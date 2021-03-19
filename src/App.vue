@@ -37,9 +37,7 @@ export default {
     if (chooseBetween.length == 0) return;
 
     this.pic = chooseBetween[Math.floor(Math.random() * chooseBetween.length)];
-    console.log(this.pic);
     localStorage.setItem("particle", this.pic.particles);
-    console.log("Set particle to: " + this.pic.particles);
   },
   mounted() {
     if (this.pic.id == null) return;
