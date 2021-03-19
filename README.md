@@ -66,7 +66,7 @@ npm run lint
 - [x] Implement calendar
 - [x] Implement greetings
 - [x] Implement clock
-- [] Implement settings
+- [ ] Implement settings
 
 
 
